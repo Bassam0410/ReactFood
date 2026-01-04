@@ -3,7 +3,7 @@ function Checkout(props) {
     return (
         <div  className="  modal"  style={props.showCheck ? {visibility: "visible"} : null}>
             <h2>Checkout</h2>
-            <p className="cart-total"  >Total Amount : £ {props.totalAmount}</p>
+            <p className="cart-total"  >Total Amount : £ {(props.totalAmount).toFixed(2)}</p>
             <form action=""   >
                 <div className="control">
                 <input

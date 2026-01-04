@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
     return <div className=" meal-item" style={props.list ||props.submit|| props.check ? {filter : 'blur(5px)' } : null} >
-        <img src={`backend/public/${props.image}`} alt="Food Image" />
+        <img src={`${props.image}`} alt="Food Image" />
         <h2>{props.name}</h2>
         <p className='meal-item-price'> £{props.price}</p>
         <p className='meal-item-description' >{props.description}</p>
@@ -11,5 +11,4 @@ function Card(props) {
         }} >Add to Cart</button>    
     </div>;
 }
-
 export default Card;

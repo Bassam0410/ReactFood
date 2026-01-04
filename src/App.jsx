@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "./components/Card";
-import data from "../backend/data/available-meals.json";
+import data from "./util/data";
 import List from "./components/shopList/List";
 import Header from "./components/Header";
 import Checkout from "./components/Checkout/Checkout";
